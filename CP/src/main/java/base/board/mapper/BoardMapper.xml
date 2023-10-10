@@ -10,19 +10,18 @@
 	
 	
 	<update id="update" parameterType="base.board.Board">
-		update  board
+		update board
 		set title=#{title},content=#{content} 
 		where boardno=#{boardno}
 	</update>
 	
 	
-	<delete id="remove" parameterType="java.lang.String">
+	<delete id="remove" parameterType="base.board.Board">
 		delete board where boardno=#{boardno}
 	</delete>
 	
 	
-	<select id="findboard" parameterType="java.lang.String"
-						  resultType="base.board.Board"	>
+	<select id="findboard" parameterType="base.board.Board">
 		select wirter,title,content,regdate,readcount from board 
 		where boardno=#{boardno}
 	</select>
