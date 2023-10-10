@@ -10,11 +10,11 @@ public class Board {
 
 	private LocalDateTime regdate; 	// 게시판 작성시간
 
-	private Long readcounst; 		// 게시판 조회수
+	private Long readcount; 		// 게시판 조회수
 
 	private Long gruopno;
 
-	private Long step;
+	private Long step; 				// 댓글
 
 	private Long depth;
 
@@ -33,7 +33,7 @@ public class Board {
 		this.writer = writer;
 		this.content = content;
 		this.regdate = regdate;
-		this.readcounst = readcounst;
+		this.readcount = readcounst;
 		this.gruopno = gruopno;
 		this.step = step;
 		this.depth = depth;
@@ -91,12 +91,12 @@ public class Board {
 
 
 	public Long getReadcounst() {
-		return readcounst;
+		return readcount;
 	}
 
 
 	public void setReadcounst(Long readcounst) {
-		this.readcounst = readcounst;
+		this.readcount = readcounst;
 	}
 
 
@@ -133,7 +133,7 @@ public class Board {
 	@Override
 	public String toString() {
 		return "Board [boardno=" + boardno + ", title=" + title + ", writer=" + writer + ", content=" + content
-				+ ", regdate=" + regdate + ", readcounst=" + readcounst + ", gruopno=" + gruopno + ", step=" + step
+				+ ", regdate=" + regdate + ", readcount=" + readcount + ", gruopno=" + gruopno + ", step=" + step
 				+ ", depth=" + depth + "]";
 	}
 

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="base.board.mapper.BoardMapper">
+	
+	
+	<insert id="create" parameterType="base.board.Board">
+			insert into board(boardno,title,writer,content,regdate,readcount,gruopno,step,depth) 
+			values(#{boradno},#{title},#{writer},#{contene},#{redate},#{readcount},#{gruopno},#{step},#{depth})
+	</insert>
+	
+	
+	<update id="update" parameterType="base.board.Board">
+		update  board
+		set title=#{title},content=#{content} 
+		where boardno=#{boardno}
+	</update>
+	
+	
+	<delete id="remove" parameterType="java.lang.String">
+		delete board where boardno=#{boardno}
+	</delete>
+	
+	
+	<select id="findboard" parameterType="java.lang.String"
+						  resultType="base.board.Board"	>
+		select wirter,title,content,regdate,readcount from board 
+		where boardno=#{boardno}
+	</select>
+	
+	
+	<select id="findBoardList" resultType="base.board.Board">
+		select boardno,title,writer,content,regdate,readcount,gruopno,step,depth from board
+	</select>
+	
+	
+	<!-- <select id="existedUser" 	parameterType="java.lang.String" 
+								resultType="java.lang.Integer">
+		select count(*) cnt from userinfo where userid=#{userId}
+	</select> -->
+	
+	
+</mapper>
