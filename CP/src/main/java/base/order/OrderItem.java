@@ -15,13 +15,13 @@ public class OrderItem {
 	P_NO            NUMBER(10) 
 	*/
 	
-	private int oderitemno;
-	private int oderitemqty;
+	private int oderitemno;   // 주문 아이템 번호
+	private int oderitemqty;  // 주문 아이템 수량
 	/********FK********/
-	private int oderno;
-	private int productno;
+	private int oderno;		  // 주문 번호
+	private int productno;	  // 상품 번호
 	/*******FK*******/
-	private Product product;
+	private Product product;  // 상품
 	
 	public OrderItem() {
 		List<OrderItem> orderItems = new ArrayList<OrderItem>();
