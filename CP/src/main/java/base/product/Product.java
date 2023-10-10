@@ -2,85 +2,85 @@ package base.product;
 
 public class Product {
 
-	private int p_no;          // 상품 번호
-	private String p_name; 	   // 상품 이름
-	private int p_price;	   // 상품 가격
-	private String p_image;	   // 상품 이미지
-	private String p_detail;   // 상품 상세페이지
-	private String p_brand;	   // 상품 브랜드
-	private int p_click_count; // 상품 조회수
-	private int p_amount;	   // 상품 수량
+	private int productno;          // 상품 번호
+	private String productname; 	   // 상품 이름
+	private int productprice;	   // 상품 가격
+	private String productimage;	   // 상품 이미지
+	private String productdetail;   // 상품 상세페이지
+	private String productbrand;	   // 상품 브랜드
+	private int productclickcount; // 상품 조회수
+	private int productamount;	   // 상품 수량
 
-	public int getP_no() {
-		return p_no;
+	public int getproductno() {
+		return productno;
 	}
 
-	public void setP_no(int p_no) {
-		this.p_no = p_no;
+	public void setproductno(int productno) {
+		this.productno = productno;
 	}
 
-	public String getP_name() {
-		return p_name;
+	public String getproductname() {
+		return productname;
 	}
 
-	public void setP_name(String p_name) {
-		this.p_name = p_name;
+	public void setproductname(String productname) {
+		this.productname = productname;
 	}
 
-	public int getP_price() {
-		return p_price;
+	public int getproductprice() {
+		return productprice;
 	}
 
-	public void setP_price(int p_price) {
-		this.p_price = p_price;
+	public void setproductprice(int productprice) {
+		this.productprice = productprice;
 	}
 
-	public String getP_image() {
-		return p_image;
+	public String getproductimage() {
+		return productimage;
 	}
 
-	public void setP_image(String p_image) {
-		this.p_image = p_image;
+	public void setproductimage(String productimage) {
+		this.productimage = productimage;
 	}
 
-	public String getP_detail() {
-		return p_detail;
+	public String getproductdetail() {
+		return productdetail;
 	}
 
-	public void setP_detail(String p_detail) {
-		this.p_detail = p_detail;
+	public void setproductdetail(String productdetail) {
+		this.productdetail = productdetail;
 	}
 
-	public String getP_brand() {
-		return p_brand;
+	public String getproductbrand() {
+		return productbrand;
 	}
 
-	public void setP_brand(String p_brand) {
-		this.p_brand = p_brand;
+	public void setproductbrand(String productbrand) {
+		this.productbrand = productbrand;
 	}
 
-	public int getP_click_count() {
-		return p_click_count;
+	public int getproductclick_count() {
+		return productclickcount;
 	}
 
-	public void setP_click_count(int p_click_count) {
-		this.p_click_count = p_click_count;
+	public void setproductclick_count(int productclick_count) {
+		this.productclickcount = productclick_count;
 	}
 
-	public int getP_amount() {
-		return p_amount;
+	public int getproductamount() {
+		return productamount;
 	}
 
-	public void setP_amount(int p_amount) {
-		this.p_amount = p_amount;
+	public void setproductamount(int productamount) {
+		this.productamount = productamount;
 	}
 
 	
 	@Override
 	public String toString() {
-		return "Product [p_no=" + p_no + ", p_name=" + p_name + ", p_price=" + p_price + ", p_image=" + p_image
-				+ ", p_detail=" + p_detail + ", p_brand=" + p_brand + ", p_click_count=" + p_click_count + ", p_amount="
-				+ p_amount + "]";
+		return "Product [productno=" + productno + ", productname=" + productname + ", productprice=" + productprice + ", productimage=" + productimage
+				+ ", productdetail=" + productdetail + ", productbrand=" + productbrand + ", productclickcount=" + productclickcount + ", productamount="
+				+ productamount + "]";
 	}
 
 }

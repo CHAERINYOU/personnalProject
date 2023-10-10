@@ -4,41 +4,41 @@ import base.product.Product;
 
 public class Cart {
 
-	private int cart_no;	 // 카트번호
-	private int cart_qty;    // 카트수량
-	private String u_id;	 // 유저아이디
+	private int cartno;	 	 // 카트번호
+	private int cartqty;     // 카트수량
+	private String userId;	 // 유저아이디
 	private Product product; // 상품
 
-	public Cart(int cart_no, int cart_qty, String u_id, Product product) {
+	public Cart(int cartno, int cartqty, String userid, Product product) {
 		super();
-		this.cart_no = cart_no;
-		this.cart_qty = cart_qty;
-		this.u_id = u_id;
+		this.cartno = cartno;
+		this.cartqty = cartqty;
+		this.userId = userid;
 		this.product = product;
 	}
 
-	public int getCart_no() {
-		return cart_no;
+	public int getCartno() {
+		return cartno;
 	}
 
-	public void setCart_no(int cart_no) {
-		this.cart_no = cart_no;
+	public void setCartno(int cartno) {
+		this.cartno = cartno;
 	}
 
-	public int getCart_qty() {
-		return cart_qty;
+	public int getCartqty() {
+		return cartqty;
 	}
 
-	public void setCart_qty(int cart_qty) {
-		this.cart_qty = cart_qty;
+	public void setCart_qty(int cartqty) {
+		this.cartqty = cartqty;
 	}
 
-	public String getU_id() {
-		return u_id;
+	public String getUserid() {
+		return userId;
 	}
 
-	public void setU_id(String u_id) {
-		this.u_id = u_id;
+	public void setUserid(String userId) {
+		this.userId = userId;
 	}
 
 	public Product getProduct() {
@@ -51,7 +51,7 @@ public class Cart {
 
 	@Override
 	public String toString() {
-		return "Cart [cart_no=" + cart_no + ", cart_qty=" + cart_qty + ", u_id=" + u_id + ", product=" + product + "]";
+		return "Cart [cartno=" + cartno + ", cartqty=" + cartqty + ", useId=" + userId + ", product=" + product + "]";
 	}
 
 	
