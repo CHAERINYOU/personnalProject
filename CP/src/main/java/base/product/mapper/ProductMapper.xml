@@ -4,14 +4,14 @@
 	
 	<resultMap id="productResultMap"
 			    type="base.product.Product" autoMapping="true">
-		<id column="p_no" property="p_no" />
-		<id column="p_name" property="p_name" />
-		<id column="p_price" property="p_price" />
-		<id column="p_image" property="p_image" />
-		<id column="p_detail" property="p_detail" />
-		<id column="p_brand" property="p_brand" />
-		<id column="p_click_count" property="p_click_count" />
-		<id column="p_amount" property="p_amount" />
+		<id column="pno" property="pno" />
+		<id column="pname" property="pname" />
+		<id column="pprice" property="pprice" />
+		<id column="pimage" property="pimage" />
+		<id column="pdetail" property="pdetail" />
+		<id column="pbrand" property="pbrand" />
+		<id column="pclickccount" property="pclickcount" />
+		<id column="pamount" property="pamount" />
 		<id column="p_size" property="p_size" />
 
 	</resultMap>
