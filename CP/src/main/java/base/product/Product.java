@@ -3,13 +3,13 @@ package base.product;
 public class Product {
 
 	private int productno;          // 상품 번호
-	private String productname; 	   // 상품 이름
-	private int productprice;	   // 상품 가격
-	private String productimage;	   // 상품 이미지
+	private String productname; 	// 상품 이름
+	private int productprice;	    // 상품 가격
+	private String productimage;	// 상품 이미지
 	private String productdetail;   // 상품 상세페이지
-	private String productbrand;	   // 상품 브랜드
-	private int productclickcount; // 상품 조회수
-	private int productamount;	   // 상품 수량
+	private String productbrand;	// 상품 브랜드
+	private int productclickcount;  // 상품 조회수
+	private int productamount;	    // 상품 수량
 
 	public int getproductno() {
 		return productno;
