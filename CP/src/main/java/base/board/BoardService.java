@@ -7,7 +7,6 @@ public interface BoardService {
 	// 게시판 생성
 	int createBoard(Board boardno) throws Exception;
 
-
 	// 게시판 수정
 	int updateBoard(Board boardno) throws Exception;
 
