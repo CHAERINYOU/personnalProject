@@ -12,7 +12,7 @@
 		<id column="pbrand" property="pbrand" />
 		<id column="pclickccount" property="pclickcount" />
 		<id column="pamount" property="pamount" />
-		<id column="p_size" property="p_size" />
+		<id column="psize" property="psize" />
 
 	</resultMap>
 	
