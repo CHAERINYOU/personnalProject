@@ -10,7 +10,7 @@ public interface CartDao {
 		// 카트(수량) 업데이트
 		public int update_qty(Cart cart);
 		
-		
+		// 카트 내 크기 업데이트
 		public int update_size(Cart cart);
 		
 		// 카트 삭제

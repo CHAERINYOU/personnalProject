@@ -13,8 +13,8 @@ public class ProductServiceImpl implements ProductService {
 	@Override
 	// 전체상품 높은 가격순으로 정렬(내림차순)
 	public List<Product> findAllByPriceHigh() {
-
-		return null;
+	
+		return productDao.findAllByClickCountHigh();
 	}
 
 	
